@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="css/googlefont.css" />
 </head>
 <body>
+    <!-- toast -->
+    <div id="toast" class="toast">
+        <div class="toast-header">
+            <strong class="mr-auto" id="product"> Product :</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Discount Code: <strong id="code"> Code</strong>
+        </div>
+    </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><i class="fas fa-spa"></i> Northwind</a>
@@ -53,20 +65,52 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="jumbotron">
+        <div class="jumbotron mb-0">
             <h1 class="display-4">Hello, world!</h1>
             <p class="lead"> Northwind will become your favorite spa product distributor.</p>
             <hr class="my-4">
             <p> Search our high quality products</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
-        </div>
     </div>
+    <div class="row">
+        <div class="col-md m-3 p-3 discounts">
+            <h3>Tis the seasoning</h3>
+            <div class="mb-4">
+                Order today! Save 12.5% on  Anton's Relaxing Aroma.
+                You don't want to make Chef Anton mad, do you?
+            </div>
+            <i>Discount expires: 2/25/2019</i><br />
+            <a href="#" class="code" data-code="1234" data-product="Chef Anton's Italian Seasoning"><i class="far fa-hand-point-right"></i> Discount Code</a>
+        </div>
+        <div class="col-md m-3 p-3 discounts">
+            <h3>Go Green</h3>
+            <div class="mb-4">
+                Genen Shouyu goes on sale very rarely. Order now to save 10%
+                off our already low price.
+            </div>
+            <i>Discount expires: 2/25/2019</i><br />
+            <a href="#" class="code" data-code="2222" data-product="Genen Shouyu"><i class="far fa-hand-point-right"></i> Discount Code</a>
+        </div>
+    <div class="col-md m-3 p-3 discounts">
+        <h3>Half Price</h3>
+        <div class="mb-4">
+            Just because you can't pronounce "Schoggi Schokolade" doesn't mean
+            you shouldn't buy it. Get it now for 50% off!
+        </div>
+        <i>Discount expires: 2/25/2019</i><br />
+        <a href="#" class="code" data-code="2122" data-product="Schoggi Schokolade"><i class="far fa-hand-point-right"></i> Discount Code</a>
+    </div>
+   
+
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <!-- bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="client.js"></script>
 </body>
 </html>
