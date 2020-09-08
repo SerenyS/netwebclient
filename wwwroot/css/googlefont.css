@@ -16,5 +16,5 @@
 .toast {
     position: absolute;
     top: 65px;
-    left: 10px;
+    right: 10px;
 }

@@ -1,0 +1,17 @@
+﻿
+h1.animated {
+      font-family: 'Patrick Hand SC', cursive;
+    display: inline-block;  
+    }
+.ball {
+    visibility: hidden;
+}
+
+span #spanRed :hover{
+    color:red;
+}
+
+
+
+
+

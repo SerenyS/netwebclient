@@ -25,8 +25,9 @@ namespace netwebclient
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseStaticFiles();
             app.UseDefaultFiles();
+            app.UseStaticFiles();
+            
         }
     }
 }
